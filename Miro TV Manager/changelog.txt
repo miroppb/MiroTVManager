@@ -1,0 +1,121 @@
+**Miro TV Manager** Changelog
+
+	-1.9.0 (April 6, 2014): I guess this is a good time as any to start version 2. Since version 1's files corrupted, I having to rewrite version 2. Not completely from scratch, but still most of the things will be rewritten. Hopefully no bugs :)
+		+ Main Window's design looks complete
+		+ Search button is more interactive, with an iPhone-styled "clear" button
+	-1.9.2 (April 9, 2014):
+		+ Fetches the correct files before processing. Previously the banner would be called in the middle, now first.
+		+ Figured out code for removing image. Will be helpful when doing "Clear Cache".
+		+ Copied most of the code from v1, changing some things.
+		+ Adding items to the list is done with about 100 less lines of code than v1.
+		+ Seems faster than v1 (after clicking Search), but then again, its mere seconds.
+	-1.9.4 (April 11, 2014):
+		+ Using a RichTextbox to show the Episode Description, with Series Title/S?E?/Ep.Name formatted bold.
+		+ Notification Bubble works.
+		+ Realizing how awesome a Dictionary is!
+		+ Added color to the Up/Down arrow
+		+ The favorites are fetched from TheTVDB.com, saved (along with their banners), and added to the top list.
+	-1.9.5 (April 12, 2014):
+		+ Fixed up the Top Series list, when the amount of favorites isn't a multiple of 5.
+		+ Arrow keys can now be used to move up and down the Top Series list :)
+	1.9.5.1 (April 13, 2014):
+		+ Bug fixes, and optimization of code.
+	1.9.5.5 (April 14, 2014):
+		+ Forgot to close file readers in some locations, this would have given an error when clearing cache or force updating. Fixed.
+		+ Fixed code, where the air-date was empty, and the program would make the next air-date today's date.
+		+ Prevented multiple episode selections. Would have caused an error.
+		+ Fixed code, that would have given an error if episodes were selected in quick succession.
+		+ The images now have corresponding tool-tips, Series and their Delete buttons.
+		+ Settings are now read/saved upon opening/closing settings. Last method was buggy.
+		+ If viewing episode description, arrow keys will move up/down the episode-list instead of episode-list and top-series-list. Click on something else/press tab, to give control to the top-series-list.
+		+ When closing the Manager, the tray-icon will go away. Previously didn't.
+	1.9.6 (April 15, 2014):
+		+ Found another bug, where if AirTime isn't set, it would cause an error. Fixed by omitting that section if an error occurs.
+		+ Adding/Removing a series to/from favorites works :) Easier than I thought.
+		+ Created the About window. Added some background information: how the application came to be, and where I get the series' info from.
+		+ Amazingly still below 1,000 lines of code. Not for long...as soon as the timing starts...ho ho ho, hold on to your sides!
+	1.9.7 (April 16-18, 2014):
+		+ Settings are saved along with the Title and SxE of next episode.
+		+ Settings window now has a list of all TV Series, along with options to get notified before/after.
+		+ Settings are correctly retrieved and applied.
+		+ New settings are correctly stored and saved.
+		+ "Apply to All" works :)
+	1.9.8 (April 20, 2014):
+		+ Added timer that checks if a series (that was selected in settings) is about to air or has already aired.
+		+ Automatically updates at 6AM (will have to test).
+		+ Guess I'll have to wait and see if it does what its supposed to do :)
+	1.9.9 (April 23 - 30, 2014):
+		+ Fixed bug where the wrong upcoming episode SxE and Title were displayed when searching
+		+ Application should work if the user doesn't have TheTVDB.com account, although it is recommended to get one.
+		+ Implemented Prowl, but will have to wait to test...
+		+ When searching, an auto-complete is shown with titles of favorite series, and when the current-searched series is a favorite, the list moves up/down to show it.
+		+ Decided to sort the series, instead of displaying as they were added to the list. Will have to change some things now :-/
+		+ When TheTVDB ID isn't set or there are no favorites, the section for Notifications in Settings becomes hidden.
+		+ Fixed bugs when saving settings.
+		+ Fixed bugs when notifying about upcoming/aired episode
+		+ Fixed bug when Force Updating, a variable wasn't being cleared, and caused the amount of series to be exceptionally large.
+		+ Shows Next Show that will air (click to show in overview)
+	2.0.0 (April, 30, 2014):
+		+ Published to http://miroppb.com/projects/TVManager/
+	2.0.1.1 (May 1, 2014):
+		+ I guess I didn't fully test, found messedup code in settings when applying "Before" to all.
+	2.0.2 (May 2, 2014):
+		+ Apparently I thought the code was working without fully testing it lol.
+		+ Found bug when adding/removing a series, some things weren't saved properly.
+	2.0.3 (May 3, 2014):
+		+ Encountered something I haven't before: series that have no banners. Fixed by creating a "no banner" image.
+	2.0.3.1 (May 6, 2014):
+		+ Fixed a bug that was causing newly searched series' banners to be "No Banner"
+	2.0.3.6 (June 11, 2014):
+		+ Fixed a bug, where if a new series was searched, that had no AirDate, it would throw an error. Fixed.
+	2.0.3.7 (June 11, 2014):
+		+ Bug with the Delete button on the search textbox. Wouldn't show for some reason, after last update. Fixed by bringing it to the front.
+	2.0.3.8 (July 25, 2014):
+		+ Bug where the image for "No Banner" was deleted during Clear Cache/Force Update, and caused an error to popup. Fixed by not deleting it.
+	2.0.3.9 (August 10, 2014):
+		+ When a series is searched/clicked that already exists in Favorites, the "Add to Favorites" button is now disabled.
+		+ If a series has ended, and the user still wants to add it to their favorites, the popup message warns them that the series has ended.
+		+ A small text now shows up below the "Add to Favorites" button that warns that the current series has ended.
+	2.0.4.0 (September 19, 2014):
+		+ Apparantly I forgot to publish this update a few weeks ago. My bad
+		+ When series are being updated, the application checks for series that have ended. If some have, pops up recommending their removal.
+		+ Fix where after viewing a series that has ended, the text "Series has ended" kept displaying even when viewing a current series.
+		+ Fixed the math for the progress bar when updating series. Potentially, if a user had >100 series, there would have been an error.
+	2.0.4.1 (Septemper 21, 2014):
+		+ Fixed major bug: If the series is new, and the first episode is yet to air, the popup balloon would say the wrong air-time.
+		+ Thanks to the bug mentioned above, this fixed some popup balloons that didn't show for upcoming episodes.
+		+ Added some code, that will give me more info about errors, so I can hopefully fix them faster in the future
+	2.0.4.2 (September 30, 2014):
+		+ Added a version checker, which checks if a new version of the application is available. If yes, asks to restart to update.
+		+ Previously, when an error occured when saving settings, it would delete the settings file, erasing the thetvdb.com and Prowl ID.
+			Application now saves the IDs, so user doesn't have to retrieve them again.
+	2.0.4.3 (October 12, 2014):
+		+ Fixed program logic bug, when Force Updating. The images weren't disposed of in the correct order.
+		+ Fixed version checker: 1) Extended timer to 24 hours, 2) Accommodated code for when the version was returned as null.
+		+ About window's version and years are generated automatically, instead of me having to change them manually each time.
+	2.0.4.4 (November 1, 2014):
+		+ Fixed bug where the application would crash if a series had no air-time.
+	2.0.4.5 (December 16, 2014):
+		+ Stopped crash when something was wrong with the episode description. Didn't look for the problem, just did try/catch :P
+	2.0.4.6 (January 15, 2015):
+		+ Stopped crash when settings were being written, but the file was already somehow in use. Useless line of code, removed.
+	2.0.4.7 (February 3, 2015):
+		+ Always some minor detail need to be fixed lol.
+		+ Series Description was retrieved from search results, /and/ from series info. Removed retrieval from results, as it doesn't always have the Description (idk why).
+	2.0.4.8 (February 12, 2015):
+		+ Series that have been recently announced, and don't have airtimes or airdates, will cause an error to appear while the application is starting.
+			Fixed by setting default variables (1 month ago, 0x0, etc.), and skipping the file reading.
+	2.0.5.0 (February 13, 2015):
+		+ New feature: the banners are now semi-transparent, and when a series is selected, a fanart replaces the background, also semi-transparent. Looks nice IMO.
+	2.0.5.1 (March 5, 2015):
+		+ Fixed bug where if the first show on top list was the next to air, and it was clicked on, it would cause an error, because some variables weren't set.
+		+ Added "Check for Update" under the ? on the Menu Strip, to manually check for update.
+	2.0.5.2 (March 28, 2015):
+		+ That moment when you see a bug, you go through your code to find it, and realize you randomly added code...and that code is the bug :D. Removed 2 lines of "why is that there" code.
+	2.0.5.3 (June 8, 2015):
+		+ When Force Updating, I forgot to remove the fanart from the background, and an error was shown. The fanart is now disposed and default image is shown.
+	2.0.5.4: (August 16, 2015):
+		+ A little problem, I coded the way the application checks whether to download new updates kinda wrong, so it would keep using old information, unless a Force Update was initiated.
+			Fixed by changing && to || (and to or). Smart me :D
+	2.0.5.5: (January 27, 2016):
+		+ When doing a Force Update, the application didn't properly dispose of the background image, and would crash. Fixed by disposing properly
