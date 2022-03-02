@@ -19,7 +19,6 @@ namespace Miro_TV_Manager
     public partial class frmMainV3 : Form
     {
         //common variables
-        public const string API = "B6A934518784BE16";
         public const string APIurl = "https://api.thetvdb.com";
         public string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\Miro TV Manager\";
         public string settingsVersion = "3.0.0.0";
