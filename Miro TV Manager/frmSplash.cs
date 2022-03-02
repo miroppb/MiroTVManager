@@ -15,6 +15,10 @@ namespace Miro_TV_Manager
         public frmSplash()
         {
             InitializeComponent();
+            System.Threading.Thread.Sleep(2000);
+            frmMainV3 frm = new frmMainV3();
+            frm.Show();
+            this.Hide();
         }
     }
 }

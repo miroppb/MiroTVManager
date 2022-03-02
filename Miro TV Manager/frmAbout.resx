@@ -120,23 +120,6 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="lblAbout.Text" xml:space="preserve">
-    <value>Hello, and thank you for using this application.
-
-How did this application come to be: Around the beginning of 2013, I missed an episode of one of my favrite shows,
-so I decided to create this application to notify me when new episodes aired. It took exactly 2 weeks to create (in the beginning),
-but I had some bugs with the notification system. The application would crash if something went wrong,
-and was only used to check when a new season would start of a certain series.
-
-Over a year later, I have decided to rewrite the whole application. With new knowledge of how C# works,
-I'm able to code this application with less and less bugs, while being able to do more and more :)
-
-As per agreement: I use http://thetvdb.com for the information, and if you have any information that could be usefu,
-please go on the website and see how you can contribute.
-
-Back to the application: If you do find a bug or something just looks wrong, don't hesitate to contact me at miro@miroppb.com.
-Thank you, once again, for using this application :)</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pcbxTheTVDB.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -707,6 +690,9 @@ Thank you, once again, for using this application :)</value>
         AABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="pcbxTwitter.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALIAAACSCAYAAADhJpBeAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH

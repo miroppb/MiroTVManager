@@ -38,6 +38,7 @@
             this.progressStart.Name = "progressStart";
             this.progressStart.Size = new System.Drawing.Size(256, 36);
             this.progressStart.TabIndex = 0;
+            this.progressStart.Visible = false;
             // 
             // lblLoaded
             // 
@@ -49,6 +50,7 @@
             this.lblLoaded.TabIndex = 2;
             this.lblLoaded.Text = "Downloaded/Processed: ";
             this.lblLoaded.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblLoaded.Visible = false;
             // 
             // frmSplash
             // 

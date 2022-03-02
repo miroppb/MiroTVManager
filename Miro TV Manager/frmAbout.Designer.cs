@@ -49,7 +49,7 @@
             this.pcbxLogo.BackgroundImage = global::Miro_TV_Manager.Properties.Resources.logo3;
             this.pcbxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pcbxLogo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcbxLogo.Location = new System.Drawing.Point(113, 12);
+            this.pcbxLogo.Location = new System.Drawing.Point(88, 12);
             this.pcbxLogo.Name = "pcbxLogo";
             this.pcbxLogo.Size = new System.Drawing.Size(579, 96);
             this.pcbxLogo.TabIndex = 1;
@@ -60,11 +60,11 @@
             // lblAbout
             // 
             this.lblAbout.BackColor = System.Drawing.Color.Transparent;
-            this.lblAbout.Location = new System.Drawing.Point(15, 111);
+            this.lblAbout.Location = new System.Drawing.Point(85, 111);
             this.lblAbout.Name = "lblAbout";
-            this.lblAbout.Size = new System.Drawing.Size(763, 263);
+            this.lblAbout.Size = new System.Drawing.Size(582, 30);
             this.lblAbout.TabIndex = 0;
-            this.lblAbout.Text = resources.GetString("lblAbout.Text");
+            this.lblAbout.Text = "Hello, and thank you for using this application.\r\n\r\n";
             this.lblAbout.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pcbxTheTVDB
@@ -73,7 +73,7 @@
             this.pcbxTheTVDB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pcbxTheTVDB.BackgroundImage")));
             this.pcbxTheTVDB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pcbxTheTVDB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcbxTheTVDB.Location = new System.Drawing.Point(18, 377);
+            this.pcbxTheTVDB.Location = new System.Drawing.Point(28, 187);
             this.pcbxTheTVDB.Name = "pcbxTheTVDB";
             this.pcbxTheTVDB.Size = new System.Drawing.Size(261, 136);
             this.pcbxTheTVDB.TabIndex = 2;
@@ -87,7 +87,7 @@
             this.pcbxTwitter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pcbxTwitter.BackgroundImage")));
             this.pcbxTwitter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pcbxTwitter.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcbxTwitter.Location = new System.Drawing.Point(647, 384);
+            this.pcbxTwitter.Location = new System.Drawing.Point(594, 187);
             this.pcbxTwitter.Name = "pcbxTwitter";
             this.pcbxTwitter.Size = new System.Drawing.Size(119, 119);
             this.pcbxTwitter.TabIndex = 3;
@@ -99,7 +99,7 @@
             // 
             this.lblVersion.AutoSize = true;
             this.lblVersion.BackColor = System.Drawing.Color.Transparent;
-            this.lblVersion.Location = new System.Drawing.Point(333, 491);
+            this.lblVersion.Location = new System.Drawing.Point(306, 303);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(76, 34);
             this.lblVersion.TabIndex = 4;
@@ -110,7 +110,7 @@
             // 
             this.lnkTHETVDB.AutoSize = true;
             this.lnkTHETVDB.BackColor = System.Drawing.Color.Transparent;
-            this.lnkTHETVDB.Location = new System.Drawing.Point(197, 281);
+            this.lnkTHETVDB.Location = new System.Drawing.Point(106, 167);
             this.lnkTHETVDB.Name = "lnkTHETVDB";
             this.lnkTHETVDB.Size = new System.Drawing.Size(116, 17);
             this.lnkTHETVDB.TabIndex = 5;
@@ -122,7 +122,7 @@
             // 
             this.lnkEmail.AutoSize = true;
             this.lnkEmail.BackColor = System.Drawing.Color.Transparent;
-            this.lnkEmail.Location = new System.Drawing.Point(645, 332);
+            this.lnkEmail.Location = new System.Drawing.Point(320, 141);
             this.lnkEmail.Name = "lnkEmail";
             this.lnkEmail.Size = new System.Drawing.Size(126, 17);
             this.lnkEmail.TabIndex = 6;
@@ -135,7 +135,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Miro_TV_Manager.Properties.Resources.circuit;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(798, 534);
+            this.ClientSize = new System.Drawing.Size(725, 346);
             this.Controls.Add(this.lnkEmail);
             this.Controls.Add(this.lnkTHETVDB);
             this.Controls.Add(this.lblVersion);

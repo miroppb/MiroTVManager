@@ -17,7 +17,7 @@ namespace Miro_TV_Manager
         {
             InitializeComponent();
             lblVersion.Text = "v. " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString()
-                + Environment.NewLine + "© 2013-" + DateTime.Now.Year + " Miro-PPB";
+                + Environment.NewLine + "© 2013-" + DateTime.Now.Year + " Miro";
         }
 
         private void pcbxLogo_Click(object sender, EventArgs e)
